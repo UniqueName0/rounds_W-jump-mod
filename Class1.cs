@@ -3,7 +3,6 @@ using HarmonyLib;
 using UnityEngine;
 using System;
 using Photon.Pun;
-using UnboundLib;
 using System.Reflection;
 using HarmonyLib.Tools;
 
@@ -31,11 +30,11 @@ namespace W_jump
         [HarmonyPostfix]
         private static void update_patch(GeneralInput __instance)
         {
-            if (Input.GetKeyDown("w"))
+            if (Input.GetKey("w"))
             {
                 __instance.jumpIsPressed = true;
             }
-            if (Input.GetKeyDown("w"))
+            if (Input.GetKey("w"))
             {
                 __instance.jumpWasPressed = true;
             }
