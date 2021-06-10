@@ -1,0 +1,1 @@
+just put W-jump.dll into your plugins folder to use the mod
