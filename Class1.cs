@@ -25,7 +25,7 @@ namespace W_jump
     }
 
     [HarmonyPatch(typeof(GeneralInput), "Update")]
-    public class W_Jump_Patch : MonoBehaviour
+    public class W_Jump_Patch
     {
         [HarmonyPostfix]
         private static void update_patch(GeneralInput __instance)
